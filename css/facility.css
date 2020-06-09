@@ -1,15 +1,10 @@
 /* NavBar */
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
- 
- }
-body {
+
+  body {
       height:100%;
       width: 100%;
       margin: 0;
-      padding: 30px;
+      /*padding: 30px;*/
       overflow-x: hidden;
       font-family: 'Poppins', serif;
       
@@ -170,6 +165,7 @@ body {
    left: 1px;
    resize: both;
    display: block;
+   padding: 0px;
 }
 
 #header3 {
@@ -234,11 +230,15 @@ body {
    background-color: #FF8A00;
    color: white;
    border: thin solid #ff8800;
-   ;
+   
    padding: 0.5rem 1rem;
    border-radius: 1.2rem;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
+/*end of headerbody*/
+
+
+
 
 /* facilities */
 .container{
@@ -729,28 +729,30 @@ footer{
 }
 
 @media (max-width:600px){
-   .footerdetails{
-      flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
-   }
+  .footerdetails{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
 
-   .footerdetails-items{
-      margin-bottom: 30px;
-      border:none;
-      width:100%;
-      display: block;
-   }
+  .footerdetails-items{
+    margin-bottom: 30px;
+    border:none;
+    width:100%;
+    display: block;
+  }
 
-   .lastfooterdiv{
-   text-align: center;
-   padding: 10px 0;
-   }
+  .lastfooterdiv{
+  text-align: center;
+  padding: 10px 0;
+  }
 
-   .footerinput{
-      width: 100%;
-   }
+  .footerinput{
+    width: 100%;
+  }
 }
+
+
    /*footer media queries*/
 @media (min-width: 601px) and (max-width:700px){
    .footerdetails-items{
@@ -771,5 +773,3 @@ footer{
       text-align: center;
    }
 }
-
-
