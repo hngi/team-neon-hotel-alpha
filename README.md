@@ -5,7 +5,7 @@ How to Contribute
 1. Fork this repo
 2. Clone the repo to your local machine by running `git clone <repo url>`
 3. In your terminal,
-   run `git remote add upstream https://github.com/dejiabiola/team-neon-hotel-alpha.git`
+   run `git remote add upstream https://github.com/hngi/team-neon-hotel-alpha.git`
 
 4. Create a new branch with your slack username and a description of the component you are working on. E.g. If you are working on the footer, you should run `git checkout -b deji-footer`
 5. Open up index.html in your browser
