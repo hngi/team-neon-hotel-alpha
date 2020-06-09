@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+nav {
+  width: 90%;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+nav h2 {
+  color: #ff8800;
+  font-size: 40px;
+  font-family: cursive;
+}
+
+nav h2:hover {
+  cursor: pointer;
+  animation: anime 1.4s ease-in 0.5s infinite alternate;
+}
+
+@keyframes anime {
+  from {
+    filter: hue-rotate(0deg);
+  }
+
+  to {
+    filter: hue-rotate(360deg);
+  }
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  transition: 1.4s easy-in;
+}
+
+nav li {
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #ff8800;
+  padding-bottom: 2px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 15px 30px;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  color: #fff;
+  font-size: 15px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn i {
+  padding: 5px;
+  transition: 0.1s ease-in;
+}
+
+.btn:hover i {
+  padding-left: 10px;
+}
+
+a {
+  color: #767676;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  /* border-radius: 10px; */
+  background: url("../images/header.png") no-repeat fixed center center/cover;
+  z-index: 1000;
+}
+
+header article {
+  position: relative;
+  width: 50%;
+  color: #fff;
+  left: 40px;
+  top: 30%;
+}
+
+header article h3 {
+  font-size: 55px;
+  color: #ff8800;
+}
+
+header p {
+  font-size: 45px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+section {
+  width: 90%;
+  /* max-width: 1150px; */
+  margin: 65px auto;
+}
+
+/* section:nth-of-type(2) {
+    width: 100vw;
+    max-width: 98vw;
+    background: #E5E5E5;
+    padding: 50px;
+} */
+
+div.sec2 {
+  background: rgba(229, 229, 229, 0.3);
+  padding: 30px;
+}
+
+div.about h3 {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+div.about p {
+  font-size: 25px;
+  text-align: center;
+  padding: 25px;
+}
+
+div.views {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+div.views.two {
+  justify-content: space-around;
+}
+
+div img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.views img:hover,
+footer div span i:hover {
+  opacity: 0.92;
+  transform: scale(1.05);
+}
+
+img[alt^="pool"] {
+  width: 700px;
+  /* height: 686px; */
+  transition: 0.2s ease-in;
+}
+
+div div.imgViews {
+  display: grid;
+  grid-gap: 30px;
+  width: 800px;
+}
+
+div.mini {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mini img {
+  width: 94px;
+  height: 76px;
+  transition: 0.1s ease-in;
+}
+
+.views article {
+  margin-left: 50px;
+}
+
+.views article p {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.views article i {
+  color: #ff8800;
+  padding-right: 40px;
+}
+
+.views article p span:not(#stars) {
+  font-size: 20px;
+  margin-left: 85px;
+  font-weight: 500;
+}
+
+.views article p span:not(#desc) {
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+span#rating {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+span#stars {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  left: -25px;
+}
+
+span.R {
+  font-size: 60px !important;
+  position: relative;
+  left: -27px;
+}
+
+div .cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 320px;
+  height: 400px;
+  margin: 20px 0;
+  background-color: #fff;
+  box-shadow: inset 200px 0 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transform: perspective(2000px);
+  transition: 1s;
+}
+
+.card:hover {
+  box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+  transform: perspective(2000px) rotate(-10deg);
+  z-index: 1000;
+}
+
+.card .img-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  transform-origin: left;
+  transition: 1s;
+  z-index: 100;
+  border-radius: 10px;
+}
+
+.card .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card:hover .img-box {
+  transform: rotateY(-135deg);
+}
+
+.card article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.card article h2 {
+  font-size: 25px;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.card article p {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+div.tesm {
+  position: relative;
+}
+
+div.tesm p {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+div.tesm span {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff8800;
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  padding: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+footer > div {
+  height: 30vh;
+  grid-row: 1/4;
+  background: url("../images/footer2.jpg") no-repeat fixed center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+footer div p {
+  font-size: 25px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+footer div:nth-of-type(3) {
+  color: azure;
+  font-weight: 900;
+}
+
+footer div span i {
+  margin: 15px;
+  padding: 10px;
+  font-size: 25px;
+  background: #ff8800;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer div input {
+  width: 200px;
+  height: 55px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 15px;
+}
+footer div a.btn {
+  padding: 10px;
+}
+footer div input:hover {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
+footer div input::placeholder {
+  position: relative;
+  font-size: 10px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.4);
+  transition: 1.5s ease-in;
+}
+
+footer div input:focus::placeholder {
+  color: #ffad06;
+  bottom: 10px;
+}
+
+footer .btn {
+  margin-bottom: 10px;
+}
+@media-query only screen and (max-width:700px) {
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
