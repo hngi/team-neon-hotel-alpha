@@ -1,3 +1,46 @@
+Damaris-contactus
+#contact{
+   font-family: 'Poppins', sans-serif;
+}
+
+
+#one{
+   background: url(./image.jpg);
+   background-image: url(rectangle.jpg);
+   color: white;
+   padding: 175px 50px 160px 50px;
+   background-size: cover;
+   background-position: 50% 50%; 
+}
+
+#one button{
+   width: auto;
+   font-size: 20px;
+   padding: 30px;
+   outline: none;
+   background: #FF8A00;
+   color: white;
+   border: none;
+   border-radius: 35px;
+   padding-top: 6px;
+   padding-bottom: 6px;
+}
+
+h1{
+   font-size: 30px;
+   color: #FF8A00;
+}
+
+#first{
+   font-size: 33px;
+   
+}
+
+.form p{
+   font-size: 30px;
+  
+}
+
 /* NavBar */
 
 body{
@@ -151,53 +194,81 @@ body{
    }
  
  }
+ master
 
-/*HeaderBody*/
 
-.container-fluid {
-   /* background-color: #C4C4C4;*/
+#details{
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 30px;
+}
+
+.form{
+   margin-left: 10%;
+   width: 50%;
+   text-align: left;
+}
+
+input[type=text]{
    width: 100%;
-   background-size: cover;
-   background-repeat: no-repeat;
-   height: 819px;
-   top: 0px;
-   left: 1px;
-   resize: both;
-   display: block;
+   font-size: 20px;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   outline: none;
+ }
+ input[type=email]{
+   width: 100%;
+   font-size: 20px;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   outline: none;
+ }
+
+.form button{
+   font-size: 20px;
+   background-color: #FF8A00;
+   width: 100%;
+   color: white;
+   border: none;
+   border-radius: 35px;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   
 }
 
-#header3 {
-   background-image: url("../images/three.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-   background-blend-mode: overlay;
-}
+.info{
+   width: 35%;
+   margin-left: 5%;
+   color: white;
+   background-color: black;
+   }
 
-#header4 {
-   background-image: url("../images/four.jpg"), linear-gradient(rgba(0, 0, 128, 0.5), rgba(0, 0, 0, 0.5));
-   background-blend-mode: overlay;
-}
-
-#header1 {
-   background-image: url("../images/one.jpg"), linear-gradient(rgba(0, 0, 128, 0.5), rgba(0, 0, 0, 0.5));
-   background-blend-mode: overlay;
-}
-
-#header2 {
-   background-image: url("../images/two.jpg"), linear-gradient(rgba(0, 0, 128, 0.3), rgba(0, 0, 0, 0.5));
-   background-blend-mode: overlay;
-}
-
-.facilities {
-   position: absolute;
-   width: 390px;
-   height: 30px;
-   left: 81px;
-   top: 420px;
-   font-family: Poppins;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 35px;
-   line-height: 50px;
+ion-icon{
    color: #FF8A00;
+   font-size: 30px;
+ }
+ Damaris-contactus
+@media only screen and (max-width: 800px){
+   #one{
+       text-align: center;
+   }
+   
+   #details{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .form {
+       width: 80%;
+       text-align: center;
+   }
+   .info{
+       width: 80%;
+   }
+   
 }
 
 .facilitiesText {
@@ -616,3 +687,4 @@ footer{
       text-align: center;
    }
 }
+ master
