@@ -11,7 +11,7 @@ function clearme(){
 			var inputval = document.getElementById('inputbox');
 			const emailcheck = /\S+@\S+\.\S+/;
 			if(emailcheck.test(inputval.value) === true){
- 				document.getElementById('warncorrect').innerHTML = "valid email";
+ 				document.getElementById('warnindicator').innerHTML = "valid email";
  			}
  			else{
  				document.getElementById('warnindicator').innerHTML = "please enter a valid email";
