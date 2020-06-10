@@ -1,3 +1,4 @@
+Damaris-contactus
 #contact{
    font-family: 'Poppins', sans-serif;
 }
@@ -39,6 +40,161 @@ h1{
    font-size: 30px;
   
 }
+
+/* NavBar */
+
+body{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+
+ }
+ .navbar{
+ 
+   font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 12vh;
+   width: 100vw;
+   font-family: 'Poppins';  
+ }
+ #hotel-name{
+   margin-right: auto;
+   margin-left: 2%;
+   font-size: 2rem;
+   color: #ff8800;
+   font-family: 'Ranchers';
+ }
+ 
+ #nav-links{
+   
+   height: 100%;
+   width: 70%;
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+ }
+ .nav-link{
+   color: black;
+   text-decoration: none;
+ }
+ .active, .nav-link:hover{
+   color: #ff8800;
+ }
+ #book-now{
+  color: white;
+  border: thin solid #ff8800;;
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  background-color: #ff8800;; 
+ }
+ #harmburger{
+   visibility: hidden;
+ }
+ .section{
+   height: 80vh;
+   width: 100vw;
+   background-color: green;
+   margin: 1rem;
+ }
+ 
+ @media screen and (max-width: 768px){
+   .navbar{
+     position: fixed;
+     height: 100vh;
+     width: 100%;
+     z-index: 99;
+     background-color: rgba(0, 0, 0, 0.9);
+     flex-direction: column; 
+     clip-path: circle(0px);
+     -webkit-clip-path: circle(0px);
+     transition: all .5s ease-out;
+     
+     
+   }
+   .navbar.open{
+     clip-path: circle(1000px);
+     -webkit-clip-path: circle(1000px);
+ 
+   }
+   #hotel-name{
+     margin-left: auto;
+   }
+   #nav-links{
+     flex-direction: column;
+     color: white;
+ 
+   }
+   .nav-link{
+     color: white;
+   }
+   .active, .nav-link:hover{
+     color: #ff8800;
+   }
+   
+   .harmburger{
+     position: absolute;
+     position: fixed;
+     cursor: pointer;
+     right: 5%;
+     top: 2%;
+     transform: translate(-5%, 35%);
+     z-index: 2;
+     background-color: white;
+     border-radius: 50%;
+     padding: 0.25rem;
+     box-shadow: 0 0.25rem 0.25rem black;
+   }
+   label,
+   label::before,
+   label::after{
+   position: absolute;
+   width: 1.5rem;
+   height: 0.2rem;
+   border-radius:0.3rem;
+   background-color: #ff8800;
+   transition: 0.3s;
+   -webkit-transition: 0.3s;
+ 
+   }
+   label{
+   cursor: pointer;
+   top: 8%;
+   right: 8%;
+   z-index: 100;
+   position: fixed;
+ 
+   }
+   label::before{
+   content: "";
+   transform: translateY(-0.4rem);
+   -webkit-transform: translateY(-0.4rem);
+   }
+   label::after{
+   content: "";
+   transform: translateY(0.4rem);
+   -webkit-transform: translateY(0.4rem);
+   }
+   #harmburger:checked + label {
+   width: 0;
+   }
+   #harmburger:checked + label::before {
+   transform: rotate(45deg) translate(0) rotate(2turn);
+   -webkit-transform:rotate(45deg) translate(0) rotate(2turn);
+ 
+   }
+   #harmburger:checked + label::after{
+   transform: rotate(-45deg) translate(0) rotate(2turn);
+   -webkit-transform:rotate(-45deg) translate(0) rotate(2turn) ;
+   }
+ 
+ }
+ master
 
 
 #details{
@@ -93,7 +249,7 @@ ion-icon{
    color: #FF8A00;
    font-size: 30px;
  }
-
+ Damaris-contactus
 @media only screen and (max-width: 800px){
    #one{
        text-align: center;
@@ -114,3 +270,421 @@ ion-icon{
    }
    
 }
+
+.facilitiesText {
+   position: absolute;
+   width: 420px;
+   height: 177px;
+   left: 81px;
+   top: 480px;
+   font-family: Poppins;
+   font-style: normal;
+   /*font-weight: bold;*/
+   font-size: 22px;
+   line-height: 35px;
+   color: #FFFFFF;
+}
+
+.btnBook {
+   position: absolute;
+   font-family: Poppins;
+   font-style: normal;
+   /*font-weight: 500;*/
+   font-size: 20px;
+   top: 630px;
+   left: 81px;
+   height: 49px;
+   width: 161px;
+   /*  line-height: 36px;*/
+   background-color: #FF8A00;
+   color: white;
+   border: thin solid #ff8800;
+   ;
+   padding: 0.5rem 1rem;
+   border-radius: 1.2rem;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+#one{
+    background-image: url(rectangle.jpg);
+    color: white;
+    padding: 60px 20px 50px 20px;
+}
+
+#one button{
+    width: 10%;
+    font-size: 20px;
+    outline: none;
+    background: #FF8A00;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+h1{
+    font-size: 30px;
+    color: #FF8A00;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+#details{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.form{
+    margin-left: 10%;
+    width: 50%;
+    text-align: left;
+}
+
+input[type=text]{
+    width: 100%;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+  }
+  input[type=email]{
+    width: 100%;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+  }
+
+.form button{
+    font-size: 20px;
+    background-color: #FF8A00;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.info{
+    width: 30%;
+    margin-left: auto;
+    text-align: left;
+    color: white;
+    background-color: black;
+    
+}
+
+ion-icon{
+    color: #FF8A00;
+  }
+
+#contact{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#one{
+    background: url(./image.jpg);
+    background-image: url(rectangle.jpg);
+    color: white;
+    padding: 175px 50px 160px 50px;
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+
+#one button{
+    width: auto;
+    font-size: 20px;
+    padding: 30px;
+    outline: none;
+    background: #FF8A00;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+h1{
+    font-size: 30px;
+    color: #FF8A00;
+}
+
+#first{
+    font-size: 33px;
+    
+}
+
+.form p{
+    font-size: 30px;
+   
+}
+
+
+#details{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.form{
+    margin-left: 10%;
+    width: 50%;
+    text-align: left;
+}
+
+input[type=text]{
+    width: 100%;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+  }
+  input[type=email]{
+    width: 100%;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+  }
+
+.form button{
+    font-size: 20px;
+    background-color: #FF8A00;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    
+}
+
+.info{
+    width: 35%;
+    margin-left: 5%;
+    color: white;
+    background-color: black;
+    }
+
+ion-icon{
+    color: #FF8A00;
+    font-size: 30px;
+  }
+
+@media only screen and (max-width: 800px){
+    #one{
+        text-align: center;
+    }
+    
+    #details{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .form {
+        width: 80%;
+        text-align: center;
+    }
+    .info{
+        width: 80%;
+    }
+    
+}
+
+     /*this is the footer section*/
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+footer{
+   background-color: #ff8a00;
+   padding: 10px;
+   font-family: 'Poppins', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.footerdetails{
+   width:100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+   color: white;
+   margin-top: 35px;
+   margin-bottom: 50px;
+   padding: 5px 0;
+}
+
+.footercall,
+.footerfind{
+   margin-bottom: 12px;
+}
+
+.footernumber{
+   color: black;
+   font-weight: bold;
+}
+.footerinput{
+   width: 35%;
+}
+.footerinput input[type="email"]{
+   border:none;
+   outline: none;
+   border-bottom: 1px solid black;
+   background-color: #ff8a00;
+   font-size: 17px;
+   width: 190px;
+   padding: 5px 0;
+   font-family: 'Poppins', sans-serif;
+}
+
+.footerinput input[type="submit"]{
+   border: none;
+   font-family: 'Poppins', sans-serif;
+   background-color: white;
+   padding: 5px 20px;
+   border-radius: 15px;
+   font-weight: bold;
+}
+
+.footerinput input[type="submit"]:hover{
+   border: 1px solid white;
+   background-color: inherit;
+   color: white;
+}
+
+.icons{
+   display: flex;
+   justify-content: center;
+}
+
+.iconslogo{
+   margin-right: 18px;
+}
+.twitter{
+   padding: 5px 6px;
+   height: 28px;
+   border-radius: 50%;
+   background-color: white;
+   color:#ff8a00;
+}
+
+.facebook{
+   padding: 3px 6px;
+   height: 28px;
+   border-radius: 50%;
+   background-color: white;
+   color: #ff8a00;
+}
+
+.mail{
+   background-color: #ff8a00;
+   color: white;
+   font-size: 25px;
+}
+.mail:hover{
+   cursor:pointer;
+}
+.twitter:hover,
+.facebook:hover{
+   cursor: pointer;
+   border: 1px solid white;
+   background-color: #ff8a00;
+   color: white;
+}
+.footerjoin{
+   margin-bottom: 12px;
+}
+
+.footerdetails-items{
+   border-right: 1px solid black;
+   width:35%;
+   height: 150px; 
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.lastfooterdiv{
+   text-align: center;
+   padding: 10px 0;
+}
+
+.lastfooterdiv p{
+   font-weight: bold;
+}
+
+#warnindicator{
+   margin-top: 10px;
+   font-size: 16px;
+   color: red;
+}
+
+#warncorrect{
+   margin-top: 10px;
+   font-size: 16px;
+   color: green;
+}
+
+@media (max-width:600px){
+   .footerdetails{
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+   }
+
+   .footerdetails-items{
+      margin-bottom: 30px;
+      border:none;
+      width:100%;
+      display: block;
+   }
+
+   .lastfooterdiv{
+   text-align: center;
+   padding: 10px 0;
+   }
+
+   .footerinput{
+      width: 100%;
+   }
+}
+   /*footer media queries*/
+@media (min-width: 601px) and (max-width:700px){
+   .footerdetails-items{
+      width:30%;
+      padding: 0 10px;
+   }
+   .footerinput input[type="email"]{
+      width: 50%;
+   }
+
+   .footerinput input[type="submit"]{
+      width: 45%;
+      padding: 5px 10px;
+      text-align:center;
+   }
+
+   .lastfooterdiv{
+      text-align: center;
+   }
+}
+ master
