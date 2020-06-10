@@ -75,13 +75,12 @@ body {
  }
  
  #book-now {
-    color: white;
+    color:white;
     border: thin solid #ff8800;
-    ;
     padding: 0.5rem 1rem;
     border-radius: 1.2rem;
     background-color: #ff8800;
-    ;
+    
  }
  
  #harmburger {
@@ -163,7 +162,7 @@ body {
        transform: rotate(-45deg) translate(0) rotate(2turn);
        -webkit-transform: rotate(-45deg) translate(0) rotate(2turn);
     }
- }
+ 
  
  /*HeaderBody*/
  
