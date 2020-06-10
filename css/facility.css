@@ -196,7 +196,7 @@ body{
      background-color: #ff8800;; 
     }
     #harmburger{
-      visibility: hidden;
+      display: none;
     }
     .section{
       height: 80vh;
@@ -337,35 +337,29 @@ body{
 }
 
 .facilities {
-   position: absolute;
    width: 390px;
+   max-width: 100%;
    height: 30px;
-   left: 81px;
-   top: 420px;
    font-family: Poppins;
    font-style: normal;
    font-weight: bold;
-   font-size: 35px;
+   font-size: 2.1875rem;
    line-height: 50px;
    color: #FF8A00;
 }
 
 .facilitiesText {
-   position: absolute;
    width: 420px;
+   max-width: 100%;
    height: 177px;
-   left: 81px;
-   top: 480px;
    font-family: Poppins;
    font-style: normal;
-   /*font-weight: bold;*/
-   font-size: 22px;
+   font-size: 1.375rem;
    line-height: 35px;
    color: #FFFFFF;
 }
 
 .btnBook {
-   position: absolute;
    font-family: Poppins;
    font-style: normal;
    /*font-weight: 500;*/
@@ -456,14 +450,18 @@ body{
 
 .card {
  height: 25rem;
- box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
  text-align: center;
  margin-top: 5rem;
- 
  width: 18rem;
  
  
 }
+
+.card img {
+  height: 12.5rem !important;
+}
+
 .big{
  
  margin-bottom: 1.2rem;
@@ -474,11 +472,26 @@ body{
  padding-top: 10px;
  
 }
+
+.containers h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.containers p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem !important ;
+}
+
+
 .section-1{
  display: flex;
  flex-direction: row;
  flex-wrap: wrap;
  justify-content: space-around;
+ margin-left: 10%;
+ margin-right: 10%;
 }
  
 
@@ -502,6 +515,8 @@ body{
  justify-content: center;
 
 }
+
+
 .dark-scarf{
  display: flex;
  position: relative;
@@ -900,6 +915,35 @@ footer{
   }
 }
 
+@media (max-width:1022px){
+  .section-1 {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+@media (max-width:600px){
+  .facilities {
+    width: 70%;
+  }
+
+  .facilitiesText {
+    width: 70%;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width:350px){
+  .facilities {
+    margin-top: -80px;
+  }
+
+  .facilitiesText {
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
+}
 
    /*footer media queries*/
 @media (min-width: 601px) and (max-width:700px){
