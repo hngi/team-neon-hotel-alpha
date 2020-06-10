@@ -45,7 +45,7 @@ body{
   background-color: #ff8800;; 
  }
  #harmburger{
-   visibility: hidden;
+   display: none;
  }
  .section{
    height: 80vh;
