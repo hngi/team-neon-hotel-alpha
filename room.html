@@ -13,23 +13,25 @@
       href="https://fonts.googleapis.com/css2?family=Poppins"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/room.css" />
   </head>
 
   <body>
     <div>
       <!--*Navbar*-->
-      <input class="harmburger" id="harmburger" type="checkbox" />
+      <input class="harmburger" id="harmburger" type="checkbox">
       <label for="harmburger"></label>
       <div class="navbar">
+        <div></div>
         <h3 id="hotel-name">Lee Hotel</h3>
         <div id="nav-links">
-          <a href="" class="nav-link" id="home">Home</a>
-          <a href="" class="nav-link" id="about">About</a>
-          <a href="" class="nav-link" id="facilities">Facilities</a>
-          <a href="" class="nav-link" id="rooms">Rooms</a>
-          <a href="" class="nav-link" id="contact-us">Contact Us</a>
-          <a href="" class="nav-link" id="book-now">Book Now!</a>
+          <a href="#home" class="nav-link" id="home">Home</a>
+          <a href="#about" class="nav-link" id="about">About</a>
+          <a href="#facilities" class="nav-link" id="facilities">Facilities</a>
+          <a href="#rooms" class="nav-link" id="rooms">Rooms</a>
+          <a href="#contact-us" class="nav-link" id="contact-us">Contact Us</a>
+          <a href="#book-now" class="nav-link" id="book-now">Book Now!</a>
         </div>
       </div>
 
@@ -49,5 +51,138 @@
         </div>
       </div>
     </div>
+
+  
+<!--/*Roompage*/-->
+  <div class="mother bg-color-code-1">
+    <div class="col-4 down-20">
+      <div class="card text-center">
+        <div class="container bottom-30 down-1">
+          <div class="down-6"><span class="font-bold color-black px24">Suites</span></div>
+          <div class="down-10"><span class="px13">Wake up to a mouth-watering breakfast buffet, with culinary samples
+              from all over the world. Wake up to a mouth-watering breakfast buffet, with culinary samples from all over
+              the world h-watering breakfast buffet, with culinary samples from all over the world h-watering breakfast
+              buffet, with culinary samples from all over the world</span></div>
+          <div class="down-5"><span class="color-code-1 font-bold px36">from $400</span></div>
+          <div class=" down-6"><a href="" class="btn-sm color-white bg-color-code-2">Book Now!</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 down-6">
+      <div class="img-container"><img src="rooms1.png" alt=""></div>
+    </div>
+  </div>
+  <div class="mother bg-color-code-1">
+    <div class="col-8 off-10 down-5">
+      <div class="img-container"><img src="rooms2.png" alt=""></div>
+    </div>
+    <div class="col-4 down-20">
+      <div class="card-2 text-center">
+        <div class="container bottom-30 down-1">
+          <div class="down-6"><span class="font-bold color-black px24">Suites</span></div>
+          <div class="down-10"><span class="px13">Wake up to a mouth-watering breakfast buffet, with culinary samples
+              from all over the world. Wake up to a mouth-watering breakfast buffet, with culinary samples from all over
+              the world h-watering breakfast buffet, with culinary samples from all over the world h-watering breakfast
+              buffet, with culinary samples from all over the world</span></div>
+          <div class="down-5"><span class="color-code-1 font-bold px36">from $400</span></div>
+          <div class=" down-6"><a href="" class="btn-sm color-white bg-color-code-2">Book Now!</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mother bg-color-code-1 bottom-50">
+    <div class="col-4 down-20">
+      <div class="card text-center">
+        <div class="container bottom-30 down-1">
+          <div class="down-6"><span class="font-bold color-black px24">Suites</span></div>
+          <div class="down-10"><span class="px13">Wake up to a mouth-watering breakfast buffet, with culinary samples
+              from all over the world. Wake up to a mouth-watering breakfast buffet, with culinary samples from all over
+              the world h-watering breakfast buffet, with culinary samples from all over the world h-watering breakfast
+              buffet, with culinary samples from all over the world</span></div>
+          <div class="down-5"><span class="color-code-1 font-bold px36">from $400</span></div>
+          <div class=" down-6"><a href="" class="btn-sm color-white bg-color-code-2">Book Now!</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-8 off-10 down-5">
+      <div class="img-container"><img src="rooms3.png" alt=""></div>
+    </div>
+  </div>
+  
+   <!--/*Footer*/-->
+  <footer>
+    <div class="footerdetails">
+      <div class="footerdetails-items">
+        <h3 class="footercall">Call us at:</h3>
+        <p class="footernumber">+254 777 777 777</p>
+      </div>
+
+      <div class="footerdetails-items">
+        <h3 class="footerfind">Find us on social media at:</h3>
+        <div class="icons">
+          <span class="twitter iconslogo"><ion-icon name="logo-twitter"></ion-icon></span>
+          <span class="facebook iconslogo"><ion-icon name="logo-facebook"></ion-icon></span>
+          <span class="facebook iconslogo"><ion-icon name="logo-instagram"></ion-icon></span>
+          <span class="mail iconslogo"><ion-icon name="mail-unread-sharp"></ion-icon></span>
+        </div>
+      </div>
+
+      <div class="footerinput">
+        <h3>Don't be left behind,</h3>
+        <h3 class="footerjoin">Join our newletter for updates</h3>
+          <input type="email" name="email" placeholder="email address" id="inputbox">
+          <input type="submit" value="Subscribe" onclick=" clearme()">
+          <div id="warnindicator"></div>
+          <div id="warncorrect"></div>
+      </div>
+    </div>
+
+    <div class="lastfooterdiv">
+      <p>All rights reserved to the Lee Hotel 2020</p>
+    </div>
+
+</footer>
+
+</body>
+
+
+
+      <!-- this is the footer section -->
+    <footer>
+        <div class="footerdetails">
+          <div class="footerdetails-items">
+            <h3 class="footercall">Call us at:</h3>
+            <p class="footernumber">+254 777 777 777</p>
+          </div>
+
+          <div class="footerdetails-items">
+            <h3 class="footerfind">Find us on social media at:</h3>
+            <div class="icons">
+              <span class="twitter iconslogo"><ion-icon name="logo-twitter"></ion-icon></span>
+              <span class="facebook iconslogo"><ion-icon name="logo-facebook"></ion-icon></span>
+              <span class="facebook iconslogo"><ion-icon name="logo-instagram"></ion-icon></span>
+              <span class="mail iconslogo"><ion-icon name="mail-unread-sharp"></ion-icon></span>
+            </div>
+          </div>
+
+          <div class="footerinput">
+            <h3>Don't be left behind,</h3>
+            <h3 class="footerjoin">Join our newletter for updates</h3>
+              <input type="email" name="email" placeholder="email address" id="inputbox">
+              <input type="submit" value="Subscribe" onclick=" clearme()">
+              <div id="warnindicator"></div>
+              <div id="warncorrect"></div>
+          </div>
+        </div>
+
+        <div class="lastfooterdiv">
+          <p>All rights reserved to the Lee Hotel 2020</p>
+        </div>
+
+    </footer>
+    
+
+    <script src="js/script.js"></script>
   </body>
+
 </html>
