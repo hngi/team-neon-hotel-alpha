@@ -1,135 +1,156 @@
 /* NavBar */
 
-body {
+body{
    padding: 0;
    margin: 0;
    box-sizing: border-box;
+
+ }
+ .navbar{
+
+   font-family: 'Poppins', sans-serif;
 }
 
 .navbar {
+
    display: flex;
    justify-content: flex-end;
    align-items: center;
    height: 12vh;
    width: 100vw;
-   font-family: 'Poppins';
-}
-
-#hotel-name {
+   font-family: 'Poppins';  
+ }
+ #hotel-name{
    margin-right: auto;
    margin-left: 2%;
    font-size: 2rem;
    color: #ff8800;
    font-family: 'Ranchers';
-}
-
-#nav-links {
+ }
+ 
+ #nav-links{
+   
    height: 100%;
    width: 70%;
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-}
-
-.nav-link {
+ }
+ .nav-link{
    color: black;
    text-decoration: none;
-}
-
-.nav-link:hover {
+ }
+ .active, .nav-link:hover{
    color: #ff8800;
-}
-
-#book-now {
-   color: white;
-   border: thin solid #ff8800;
-   ;
-   padding: 0.5rem 1rem;
-   border-radius: 1.2rem;
-   background-color: #ff8800;
-   ;
-}
-
-#harmburger {
+ }
+ #book-now{
+  color: white;
+  border: thin solid #ff8800;;
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  background-color: #ff8800;; 
+ }
+ #harmburger{
    visibility: hidden;
-}
-
-@media screen and (max-width: 768px) {
-   .navbar {
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      flex-direction: column;
-      clip-path: circle(0px);
-      -webkit-clip-path: circle(0px);
-      transition: all .5s ease-out;
-      z-index: 999;
+ }
+ .section{
+   height: 80vh;
+   width: 100vw;
+   background-color: green;
+   margin: 1rem;
+ }
+ 
+ @media screen and (max-width: 768px){
+   .navbar{
+     position: fixed;
+     height: 100vh;
+     width: 100%;
+     z-index: 99;
+     background-color: rgba(0, 0, 0, 0.9);
+     flex-direction: column; 
+     clip-path: circle(0px);
+     -webkit-clip-path: circle(0px);
+     transition: all .5s ease-out;
+     
+     
    }
-   .navbar.open {
-      clip-path: circle(1000px);
-      -webkit-clip-path: circle(1000px);
+   .navbar.open{
+     clip-path: circle(1000px);
+     -webkit-clip-path: circle(1000px);
+ 
    }
-   #hotel-name {
-      margin-left: auto;
+   #hotel-name{
+     margin-left: auto;
    }
-   #nav-links {
-      flex-direction: column;
-      color: white;
+   #nav-links{
+     flex-direction: column;
+     color: white;
+ 
    }
-   .nav-link {
-      color: white;
+   .nav-link{
+     color: white;
    }
-   .harmburger {
-      position: absolute;
-      position: fixed;
-      cursor: pointer;
-      right: 5%;
-      top: 2%;
-      transform: translate(-5%, 35%);
-      z-index: 2;
-      background-color: white;
-      border-radius: 50%;
-      padding: 0.25rem;
-      box-shadow: 0 0.25rem 0.25rem black;
+   .active, .nav-link:hover{
+     color: #ff8800;
    }
-   label, label::before, label::after {
-      position: absolute;
-      width: 1.5rem;
-      height: 0.2rem;
-      border-radius: 0.3rem;
-      background-color: #ff8800;
-      transition: 0.3s;
-      -webkit-transition: 0.3s;
+   
+   .harmburger{
+     position: absolute;
+     position: fixed;
+     cursor: pointer;
+     right: 5%;
+     top: 2%;
+     transform: translate(-5%, 35%);
+     z-index: 2;
+     background-color: white;
+     border-radius: 50%;
+     padding: 0.25rem;
+     box-shadow: 0 0.25rem 0.25rem black;
    }
-   label {
-      cursor: pointer;
-      top: 8%;
-      right: 8%;
-      z-index: 2;
+   label,
+   label::before,
+   label::after{
+   position: absolute;
+   width: 1.5rem;
+   height: 0.2rem;
+   border-radius:0.3rem;
+   background-color: #ff8800;
+   transition: 0.3s;
+   -webkit-transition: 0.3s;
+ 
    }
-   label::before {
-      content: "";
-      transform: translateY(-0.3rem);
-      -webkit-transform: translateY(-0.3rem);
+   label{
+   cursor: pointer;
+   top: 8%;
+   right: 8%;
+   z-index: 100;
+   position: fixed;
+ 
    }
-   label::after {
-      content: "";
-      transform: translateY(0.3rem);
-      -webkit-transform: translateY(0.3rem);
+   label::before{
+   content: "";
+   transform: translateY(-0.4rem);
+   -webkit-transform: translateY(-0.4rem);
    }
-   #harmburger:checked+label {
-      width: 0;
+   label::after{
+   content: "";
+   transform: translateY(0.4rem);
+   -webkit-transform: translateY(0.4rem);
    }
-   #harmburger:checked+label::before {
-      transform: rotate(45deg) translate(0) rotate(2turn);
-      -webkit-transform: rotate(45deg) translate(0) rotate(2turn);
+   #harmburger:checked + label {
+   width: 0;
    }
-   #harmburger:checked+label::after {
-      transform: rotate(-45deg) translate(0) rotate(2turn);
-      -webkit-transform: rotate(-45deg) translate(0) rotate(2turn);
+   #harmburger:checked + label::before {
+   transform: rotate(45deg) translate(0) rotate(2turn);
+   -webkit-transform:rotate(45deg) translate(0) rotate(2turn);
+ 
    }
-}
+   #harmburger:checked + label::after{
+   transform: rotate(-45deg) translate(0) rotate(2turn);
+   -webkit-transform:rotate(-45deg) translate(0) rotate(2turn) ;
+   }
+ 
+ }
 
 /*HeaderBody*/
 
@@ -435,6 +456,157 @@ margin-top: 5%;
 }
 
  /*this is the footer section*/
+
+.first {
+   text-align: center;
+   float: center;
+   font-size: 18px;
+   font-weight: 120;
+}
+.flex-container20 {
+   display: flex;
+   height: 300px;
+   width: 100%;
+   justify-content: space-around;
+}
+.left {
+   height: 100%;
+   width: 60%;
+   margin: 30px;
+}
+.right {
+   height: 100%;
+   width: 40%;
+   padding-left: 7px;
+   margin: 10px;
+   flex-grow: 1;
+}
+.right h3 {
+       padding-left: 9px;
+}
+.right h1 {
+   margin-top: -26px;
+   font-size: 53px;
+}
+
+.ion-ios1 {
+   font-size: 16px;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 27px;
+   height: 27px;
+   display: inline-block;
+   position: relative;
+   color: #FF8A00;
+   background-color: white;
+}
+.bottom {
+ display: flex;
+ height: 100px;
+ width: 100%;
+}
+.flex-item {
+   margin: 3px;
+}
+
+.ion-ios {
+   font-size: 35px;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 35px;
+   height: 35px;
+   display: inline-block;
+   position: relative;
+   color: #FF8A00;
+   background-color: white;
+}
+.ion-ios:before {
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.ion-ios2 {
+   font-size: 40px;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 35px;
+   height: 35px;
+   display: inline-block;
+   position: relative;
+   color: white;
+   background-color: #FF8A00;
+}
+.ion-ios2:before {
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.facilities1 {
+   float: center;
+   text-align: center;
+   font-weight: 222;
+   margin-top: 177px;
+}
+.container30 {
+   display: flex;
+   background: whitesmoke;
+   width: auto; 
+
+   padding-right: 40px; 
+   padding-left: 40px;
+}
+.flex-item2 {
+   display: inline-block;
+   width: 27%;
+   margin: 24px;
+   background-color: white;
+}
+.flex-item2 h4 {
+   float: center;
+   text-align: center;
+}
+.testimonials {
+   float: center;
+   font-size: 16px;
+   text-align: center;
+   font-weight: 222;
+   margin-top: 43px;
+}
+.container40 {
+   display: flex;
+   width: auto;
+   margin-top: -100px;
+   padding-right: 44px;
+   padding-left: 54px;
+}
+.flex-item3 {
+   margin: 100px;
+}
+.flex-item3 h3 {
+   float: right;
+   text-align: right;
+   color: #FF8A00;
+}
+span {
+   padding-left: 10px;
+}
+.quote {
+   font-size: 42px;
+
+}
+#excel {
+   font-size: 16px;
+   text-align: center;
+   padding-left: 78px; 
+}
+
+     /*this is the footer section*/
+
 
 *{
    margin:0;

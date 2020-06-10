@@ -13,23 +13,25 @@
       href="https://fonts.googleapis.com/css2?family=Poppins"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <link rel="stylesheet" href="css/room.css" />
   </head>
 
   <body>
     <div>
       <!--*Navbar*-->
-      <input class="harmburger" id="harmburger" type="checkbox" />
+      <input class="harmburger" id="harmburger" type="checkbox">
       <label for="harmburger"></label>
       <div class="navbar">
+        <div></div>
         <h3 id="hotel-name">Lee Hotel</h3>
         <div id="nav-links">
-          <a href="" class="nav-link" id="home">Home</a>
-          <a href="" class="nav-link" id="about">About</a>
-          <a href="" class="nav-link" id="facilities">Facilities</a>
-          <a href="" class="nav-link" id="rooms">Rooms</a>
-          <a href="" class="nav-link" id="contact-us">Contact Us</a>
-          <a href="" class="nav-link" id="book-now">Book Now!</a>
+          <a href="#home" class="nav-link" id="home">Home</a>
+          <a href="#about" class="nav-link" id="about">About</a>
+          <a href="#facilities" class="nav-link" id="facilities">Facilities</a>
+          <a href="#rooms" class="nav-link" id="rooms">Rooms</a>
+          <a href="#contact-us" class="nav-link" id="contact-us">Contact Us</a>
+          <a href="#book-now" class="nav-link" id="book-now">Book Now!</a>
         </div>
       </div>
 
@@ -49,6 +51,7 @@
         </div>
       </div>
     </div>
+
   
 <!--/*Roompage*/-->
   <div class="mother bg-color-code-1">
@@ -141,4 +144,45 @@
 </footer>
 
 </body>
+
+
+
+      <!-- this is the footer section -->
+    <footer>
+        <div class="footerdetails">
+          <div class="footerdetails-items">
+            <h3 class="footercall">Call us at:</h3>
+            <p class="footernumber">+254 777 777 777</p>
+          </div>
+
+          <div class="footerdetails-items">
+            <h3 class="footerfind">Find us on social media at:</h3>
+            <div class="icons">
+              <span class="twitter iconslogo"><ion-icon name="logo-twitter"></ion-icon></span>
+              <span class="facebook iconslogo"><ion-icon name="logo-facebook"></ion-icon></span>
+              <span class="facebook iconslogo"><ion-icon name="logo-instagram"></ion-icon></span>
+              <span class="mail iconslogo"><ion-icon name="mail-unread-sharp"></ion-icon></span>
+            </div>
+          </div>
+
+          <div class="footerinput">
+            <h3>Don't be left behind,</h3>
+            <h3 class="footerjoin">Join our newletter for updates</h3>
+              <input type="email" name="email" placeholder="email address" id="inputbox">
+              <input type="submit" value="Subscribe" onclick=" clearme()">
+              <div id="warnindicator"></div>
+              <div id="warncorrect"></div>
+          </div>
+        </div>
+
+        <div class="lastfooterdiv">
+          <p>All rights reserved to the Lee Hotel 2020</p>
+        </div>
+
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+  </body>
+
 </html>
