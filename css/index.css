@@ -4,9 +4,10 @@ body{
    padding: 0;
    margin: 0;
    box-sizing: border-box;
- }
+   font-family: 'Poppins', sans-serif;
+}
+
  .navbar{
-   
    display: flex;
    justify-content: flex-end;
    align-items: center;
@@ -226,11 +227,155 @@ body{
    padding: 0.5rem 1rem;
    border-radius: 1.2rem;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+} 
+
+.first {
+   text-align: center;
+   float: center;
+   font-size: 18px;
+   font-weight: 120;
+}
+.flex-container20 {
+   display: flex;
+   height: 300px;
+   width: 100%;
+   justify-content: space-around;
+}
+.left {
+   height: 100%;
+   width: 60%;
+   margin: 30px;
+}
+.right {
+   height: 100%;
+   width: 40%;
+   padding-left: 7px;
+   margin: 10px;
+   flex-grow: 1;
+}
+.right h3 {
+       padding-left: 9px;
+}
+.right h1 {
+   margin-top: -26px;
+   font-size: 53px;
 }
 
+.ion-ios1 {
+   font-size: 16px;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 27px;
+   height: 27px;
+   display: inline-block;
+   position: relative;
+   color: #FF8A00;
+   background-color: white;
+}
+.bottom {
+ display: flex;
+ height: 100px;
+ width: 100%;
+}
+.flex-item {
+   margin: 3px;
+}
 
+.ion-ios {
+   font-size: 35px;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 35px;
+   height: 35px;
+   display: inline-block;
+   position: relative;
+   color: #FF8A00;
+   background-color: white;
+}
+.ion-ios:before {
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.ion-ios2 {
+   font-size: 40px;
+   border-radius: 50%;
+   overflow: hidden;
+   width: 35px;
+   height: 35px;
+   display: inline-block;
+   position: relative;
+   color: white;
+   background-color: #FF8A00;
+}
+.ion-ios2:before {
+   display: inline-block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
 
+.facilities1 {
+   float: center;
+   text-align: center;
+   font-weight: 222;
+   margin-top: 177px;
+}
+.container30 {
+   display: flex;
+   background: whitesmoke;
+   width: auto; 
+   padding-right: 40px; 
+   padding-left: 40px;
+}
+.flex-item2 {
+   display: inline-block;
+   width: 27%;
+   margin: 24px;
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.flex-item2 h4 {
+   float: center;
+   text-align: center;
+}
+.testimonials {
+   float: center;
+   font-size: 16px;
+   text-align: center;
+   font-weight: 222;
+   margin-top: 43px;
+}
+.container40 {
+   display: flex;
+   width: auto;
+   margin-top: -100px;
+   padding-right: 44px;
+   padding-left: 54px;
+}
+.flex-item3 {
+   margin: 100px;
+}
+.flex-item3 h3 {
+   float: right;
+   text-align: right;
+   color: #FF8A00;
+}
+span {
+   padding-left: 10px;
+}
+.quote {
+   font-size: 42px;
 
+}
+#excel {
+   font-size: 16px;
+   text-align: center;
+   padding-left: 78px; 
+}
       /*this is the footer section*/
 
 *{
@@ -413,4 +558,3 @@ footer{
    .lastfooterdiv{
       text-align: center;
    }
-}
