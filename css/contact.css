@@ -1,214 +1,116 @@
-/* NavBar */
-
-body {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+#contact{
+   font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   height: 12vh;
-   width: 100vw;
-   font-family: 'Poppins';
-}
 
-#hotel-name {
-   margin-right: auto;
-   margin-left: 2%;
-   font-size: 2rem;
-   color: #ff8800;
-   font-family: 'Ranchers';
-}
-
-#nav-links {
-   height: 100%;
-   width: 70%;
-   display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-}
-
-.nav-link {
-   color: black;
-   text-decoration: none;
-}
-
-.nav-link:hover {
-   color: #ff8800;
-}
-
-#book-now {
+#one{
+   background: url(./image.jpg);
+   background-image: url(rectangle.jpg);
    color: white;
-   border: thin solid #ff8800;
-   ;
-   padding: 0.5rem 1rem;
-   border-radius: 1.2rem;
-   background-color: #ff8800;
-   ;
-}
-
-#harmburger {
-   visibility: hidden;
-}
-
-@media screen and (max-width: 768px) {
-   .navbar {
-      position: fixed;
-      height: 100vh;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      flex-direction: column;
-      clip-path: circle(0px);
-      -webkit-clip-path: circle(0px);
-      transition: all .5s ease-out;
-      z-index: 999;
-   }
-   .navbar.open {
-      clip-path: circle(1000px);
-      -webkit-clip-path: circle(1000px);
-   }
-   #hotel-name {
-      margin-left: auto;
-   }
-   #nav-links {
-      flex-direction: column;
-      color: white;
-   }
-   .nav-link {
-      color: white;
-   }
-   .harmburger {
-      position: absolute;
-      position: fixed;
-      cursor: pointer;
-      right: 5%;
-      top: 2%;
-      transform: translate(-5%, 35%);
-      z-index: 2;
-      background-color: white;
-      border-radius: 50%;
-      padding: 0.25rem;
-      box-shadow: 0 0.25rem 0.25rem black;
-   }
-   label, label::before, label::after {
-      position: absolute;
-      width: 1.5rem;
-      height: 0.2rem;
-      border-radius: 0.3rem;
-      background-color: #ff8800;
-      transition: 0.3s;
-      -webkit-transition: 0.3s;
-   }
-   label {
-      cursor: pointer;
-      top: 8%;
-      right: 8%;
-      z-index: 2;
-   }
-   label::before {
-      content: "";
-      transform: translateY(-0.3rem);
-      -webkit-transform: translateY(-0.3rem);
-   }
-   label::after {
-      content: "";
-      transform: translateY(0.3rem);
-      -webkit-transform: translateY(0.3rem);
-   }
-   #harmburger:checked+label {
-      width: 0;
-   }
-   #harmburger:checked+label::before {
-      transform: rotate(45deg) translate(0) rotate(2turn);
-      -webkit-transform: rotate(45deg) translate(0) rotate(2turn);
-   }
-   #harmburger:checked+label::after {
-      transform: rotate(-45deg) translate(0) rotate(2turn);
-      -webkit-transform: rotate(-45deg) translate(0) rotate(2turn);
-   }
-}
-
-/*HeaderBody*/
-
-.container-fluid {
-   /* background-color: #C4C4C4;*/
-   width: 100%;
+   padding: 175px 50px 160px 50px;
    background-size: cover;
-   background-repeat: no-repeat;
-   height: 819px;
-   top: 0px;
-   left: 1px;
-   resize: both;
-   display: block;
+   background-position: 50% 50%; 
 }
 
-#header3 {
-   background-image: url("../images/three.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-   background-blend-mode: overlay;
+#one button{
+   width: auto;
+   font-size: 20px;
+   padding: 30px;
+   outline: none;
+   background: #FF8A00;
+   color: white;
+   border: none;
+   border-radius: 35px;
+   padding-top: 6px;
+   padding-bottom: 6px;
 }
 
-#header4 {
-   background-image: url("../images/four.jpg"), linear-gradient(rgba(0, 0, 128, 0.5), rgba(0, 0, 0, 0.5));
-   background-blend-mode: overlay;
-}
-
-#header1 {
-   background-image: url("../images/one.jpg"), linear-gradient(rgba(0, 0, 128, 0.5), rgba(0, 0, 0, 0.5));
-   background-blend-mode: overlay;
-}
-
-#header2 {
-   background-image: url("../images/two.jpg"), linear-gradient(rgba(0, 0, 128, 0.3), rgba(0, 0, 0, 0.5));
-   background-blend-mode: overlay;
-}
-
-.facilities {
-   position: absolute;
-   width: 390px;
-   height: 30px;
-   left: 81px;
-   top: 420px;
-   font-family: Poppins;
-   font-style: normal;
-   font-weight: bold;
-   font-size: 35px;
-   line-height: 50px;
+h1{
+   font-size: 30px;
    color: #FF8A00;
 }
 
-.facilitiesText {
-   position: absolute;
-   width: 420px;
-   height: 177px;
-   left: 81px;
-   top: 480px;
-   font-family: Poppins;
-   font-style: normal;
-   /*font-weight: bold;*/
-   font-size: 22px;
-   line-height: 35px;
-   color: #FFFFFF;
+#first{
+   font-size: 33px;
+   
 }
 
-.btnBook {
-   position: absolute;
-   font-family: Poppins;
-   font-style: normal;
-   /*font-weight: 500;*/
+.form p{
+   font-size: 30px;
+  
+}
+
+
+#details{
+   display: flex;
+   justify-content: space-evenly;
+   padding-top: 30px;
+}
+
+.form{
+   margin-left: 10%;
+   width: 50%;
+   text-align: left;
+}
+
+input[type=text]{
+   width: 100%;
    font-size: 20px;
-   top: 630px;
-   left: 81px;
-   height: 49px;
-   width: 161px;
-   /*  line-height: 36px;*/
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   outline: none;
+ }
+ input[type=email]{
+   width: 100%;
+   font-size: 20px;
+   border-top: none;
+   border-right: none;
+   border-left: none;
+   outline: none;
+ }
+
+.form button{
+   font-size: 20px;
    background-color: #FF8A00;
+   width: 100%;
    color: white;
-   border: thin solid #ff8800;
-   ;
-   padding: 0.5rem 1rem;
-   border-radius: 1.2rem;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+   border: none;
+   border-radius: 35px;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+   
+}
+
+.info{
+   width: 35%;
+   margin-left: 5%;
+   color: white;
+   background-color: black;
+   }
+
+ion-icon{
+   color: #FF8A00;
+   font-size: 30px;
+ }
+
+@media only screen and (max-width: 800px){
+   #one{
+       text-align: center;
+   }
+   
+   #details{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .form {
+       width: 80%;
+       text-align: center;
+   }
+   .info{
+       width: 80%;
+   }
+   
 }
