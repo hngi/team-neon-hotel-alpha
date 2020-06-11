@@ -194,79 +194,76 @@ body{
    }
  
  }
- master
-
+ master start
 
 #details{
-   display: flex;
-   justify-content: space-evenly;
-   padding-top: 30px;
-}
-
-.form{
-   margin-left: 10%;
-   width: 50%;
-   text-align: left;
-}
-
-input[type=text]{
-   width: 100%;
-   font-size: 20px;
-   border-top: none;
-   border-right: none;
-   border-left: none;
-   outline: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+ }
+ 
+ .form p{
+    font-size: 30px;
+ }
+ 
+ .form{
+    margin-left: 10%;
+    width: 50%;
+    text-align: left;
+ }
+ 
+ .form{
+    margin-left: 10%;
+    width: 50%;
+    text-align: left;
+ }
+ 
+ input[type=text]{
+    width: 100%;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+ 
  }
  input[type=email]{
-   width: 100%;
-   font-size: 20px;
-   border-top: none;
-   border-right: none;
-   border-left: none;
-   outline: none;
+    width: 100%;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
  }
-
-.form button{
-   font-size: 20px;
-   background-color: #FF8A00;
-   width: 100%;
-   color: white;
-   border: none;
-   border-radius: 35px;
-   padding-top: 0.5rem;
-   padding-bottom: 0.5rem;
-   
-}
-
-.info{
-   width: 35%;
-   margin-left: 5%;
-   color: white;
-   background-color: black;
-   }
-
-ion-icon{
-   color: #FF8A00;
-   font-size: 30px;
+ 
+ .form button{
+    font-size: 20px;
+    background-color: #FF8A00;
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
  }
+ 
+ .info{
+    font-size: 25px;
+    width: 35%;
+    margin-left: 5%;
+    color: white;
+    background-color: black;
+    }
+ 
+ ion-icon{
+    color: #FF8A00;
+    font-size: 30px;
+ }
+ 
 
 @media only screen and (max-width: 800px){
    #one{
        text-align: center;
-   }
-   
-   #details{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-   }
-   .form {
-       width: 80%;
-       text-align: center;
-   }
-   .info{
-       width: 80%;
    }
    
 
@@ -337,71 +334,6 @@ h1{
     
 } 
 
- 
-#details{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
- }
- 
- .form p{
-    font-size: 30px;
- }
- 
- .form{
-    margin-left: 10%;
-    width: 50%;
-    text-align: left;
- }
- 
- .form{
-    margin-left: 10%;
-    width: 50%;
-    text-align: left;
- }
- 
- input[type=text]{
-    width: 100%;
-    font-size: 20px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
- 
- }
- input[type=email]{
-    width: 100%;
-    font-size: 20px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
- }
- 
- .form button{
-    font-size: 20px;
-    background-color: #FF8A00;
-    width: 100%;
-    color: white;
-    border: none;
-    border-radius: 35px;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
- }
- 
- .info{
-    font-size: 25px;
-    width: 35%;
-    margin-left: 5%;
-    color: white;
-    background-color: black;
-    }
- 
- ion-icon{
-    color: #FF8A00;
-    font-size: 30px;
- }
- 
  /*media query newly inputed code for responsiveness (DON'T DELETE)*/
  
  @media only screen and (max-width: 800px){
