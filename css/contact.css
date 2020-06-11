@@ -4,14 +4,14 @@ Damaris-contactus
 }
 
 
-#one{
+/* #one{
    background: url(./image.jpg);
    background-image: url(rectangle.jpg);
    color: white;
    padding: 175px 50px 160px 50px;
    background-size: cover;
    background-position: 50% 50%; 
-}
+} */
 
 #one button{
    width: auto;
@@ -59,7 +59,7 @@ body{
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   height: 12vh;
+   height: 80px;
    width: 100vw;
    font-family: 'Poppins';  
  }
@@ -94,7 +94,7 @@ body{
   background-color: #ff8800;; 
  }
  #harmburger{
-   visibility: hidden;
+   display: none;
  }
  .section{
    height: 80vh;
@@ -105,7 +105,7 @@ body{
  
  @media screen and (max-width: 768px){
    .navbar{
-     position: fixed;
+     position: absolute;
      height: 100vh;
      width: 100%;
      z-index: 99;
@@ -139,7 +139,7 @@ body{
    
    .harmburger{
      position: absolute;
-     position: fixed;
+     position: absolute;
      cursor: pointer;
      right: 5%;
      top: 2%;
@@ -167,7 +167,7 @@ body{
    top: 8%;
    right: 8%;
    z-index: 100;
-   position: fixed;
+   position: absolute;
  
    }
    label::before{
@@ -249,7 +249,7 @@ ion-icon{
    color: #FF8A00;
    font-size: 30px;
  }
- Damaris-contactus
+
 @media only screen and (max-width: 800px){
    #one{
        text-align: center;
@@ -269,7 +269,7 @@ ion-icon{
        width: 80%;
    }
    
-}
+
 
 .facilitiesText {
    position: absolute;
@@ -687,4 +687,5 @@ footer{
       text-align: center;
    }
 }
- master
+
+}
