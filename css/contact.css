@@ -305,94 +305,7 @@ ion-icon{
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
-
-#one{
-    background-image: url(rectangle.jpg);
-    color: white;
-    padding: 60px 20px 50px 20px;
-}
-
-#one button{
-    width: 10%;
-    font-size: 20px;
-    outline: none;
-    background: #FF8A00;
-    color: white;
-    border: none;
-    border-radius: 35px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-h1{
-    font-size: 30px;
-    color: #FF8A00;
-}
-
-p{
-    font-size: 20px;
-}
-
-
-#details{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 30px;
-}
-
-.form{
-    margin-left: 10%;
-    width: 50%;
-    text-align: left;
-}
-
-input[type=text]{
-    width: 100%;
-    font-size: 20px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
-  }
-  input[type=email]{
-    width: 100%;
-    font-size: 20px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    outline: none;
-  }
-
-.form button{
-    font-size: 20px;
-    background-color: #FF8A00;
-    width: 100%;
-    color: white;
-    border: none;
-    border-radius: 35px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.info{
-    width: 30%;
-    margin-left: auto;
-    text-align: left;
-    color: white;
-    background-color: black;
-    
-}
-
-ion-icon{
-    color: #FF8A00;
-  }
-
-#contact{
-    font-family: 'Poppins', sans-serif;
-}
-
-
-#one{
+ #one{
     background: url(./image.jpg);
     background-image: url(rectangle.jpg);
     color: white;
@@ -422,71 +335,76 @@ h1{
 #first{
     font-size: 33px;
     
-}
+} 
 
-.form p{
-    font-size: 30px;
-   
-}
-
-
+ 
 #details{
     display: flex;
     justify-content: space-evenly;
     padding-top: 30px;
-}
-
-.form{
+ }
+ 
+ .form p{
+    font-size: 30px;
+ }
+ 
+ .form{
     margin-left: 10%;
     width: 50%;
     text-align: left;
-}
-
-input[type=text]{
+ }
+ 
+ .form{
+    margin-left: 10%;
+    width: 50%;
+    text-align: left;
+ }
+ 
+ input[type=text]{
     width: 100%;
     font-size: 20px;
     border-top: none;
     border-right: none;
     border-left: none;
     outline: none;
-  }
-  input[type=email]{
+ 
+ }
+ input[type=email]{
     width: 100%;
     font-size: 20px;
     border-top: none;
     border-right: none;
     border-left: none;
     outline: none;
-  }
-
-.form button{
+ }
+ 
+ .form button{
     font-size: 20px;
     background-color: #FF8A00;
     width: 100%;
     color: white;
     border: none;
     border-radius: 35px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    
-}
-
-.info{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+ }
+ 
+ .info{
+    font-size: 25px;
     width: 35%;
     margin-left: 5%;
     color: white;
     background-color: black;
     }
-
-ion-icon{
+ 
+ ion-icon{
     color: #FF8A00;
     font-size: 30px;
-  }
-
-@media only screen and (max-width: 800px){
-    #one{
-        text-align: center;
-    }
+ }
+ 
+ /*media query newly inputed code for responsiveness (DON'T DELETE)*/
+ 
+ @media only screen and (max-width: 800px){
     
     #details{
       display: flex;
@@ -501,8 +419,8 @@ ion-icon{
     .info{
         width: 80%;
     }
-    
-}
+ }
+
 
      /*this is the footer section*/
 
