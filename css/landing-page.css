@@ -1,0 +1,308 @@
+.first-section {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+
+main {
+  padding: 5% 4% 5% 8% ;
+  
+}
+.first-section p {
+  font-weight: lighter;
+}
+
+.first {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.flex-container20 {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  /* border: 2px solid brown; */
+}
+.left {
+  width: 800px;
+}
+
+.left img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.right {
+  padding-top: 20px;
+  padding-left: 40px;
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right > div {
+  margin-bottom: 30px;
+}
+
+.location, .money, .describe {
+  display: flex;
+  width: 80%;
+  align-items: center;
+}
+
+.location img, .money img, .describe img {
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+.rate-number {
+  font-weight: 700;
+  font-size: 2.5rem;
+  height: 100%;
+  margin-right: 2px;
+}
+
+.sub-rate-container p:nth-of-type(1) {
+  font-weight: lighter;
+  font-size: 0.8rem;
+}
+
+
+
+
+.location p, .money p, .describe p {
+  line-height: 1.5;
+}
+
+.rating-container {
+  display: flex;
+}
+
+.sub-rate-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.sub-rate-container .ion-ios1 {
+  height: 15px;
+  position: relative;
+  bottom: 4px;
+}
+
+.describe {
+  align-items: flex-start;
+}
+
+.item-flex {
+  margin-right: 40px;
+}
+
+
+.ion-ios1 {
+  font-size: 16px;
+  border-radius: 50%;
+  color: #FF8A00;
+  background-color: white;
+  border-color: #FF8A00;
+}
+
+
+.bottom {
+display: flex;
+height: 100px;
+width: 100%;
+flex-wrap: wrap;
+justify-content: space-between;
+padding: 0 !important;
+}
+
+.bottom img {
+  height: 100px;
+}
+
+#second-part {
+  padding: 0 5% 5% 5%;
+}
+
+
+.facilities12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 17px;
+  margin-bottom: 20px;
+}
+
+.facilities12 h3 {
+  margin-bottom: 17px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+.container30 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.flex-item2 {
+  display: inline-block;
+  width: 300px;
+  margin: 24px;
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flex-item2 img {
+  width: 100%;
+
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.inner h4 {
+  margin-bottom: 25px;
+}
+
+
+.testimonials {
+  text-align: center;
+  font-weight: 222;
+  margin-top: 43px;
+  margin-bottom: 40px;
+}
+
+.testimonials h3 {
+  margin-bottom: 17px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+
+
+.container40 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.flex-item3 {
+  display: flex;
+  align-items: flex-start;
+  width: 400px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.flex-item3 img {
+  margin-right: 10px;
+}
+
+.flex-item3 p {
+  padding-top: 15px;
+}
+
+.container40 h3 {
+  float: right;
+  color: #FF8A00;
+}
+
+span {
+    padding-left: 10px;
+}
+.quote {
+    font-size: 42px;
+
+}
+#excel {
+    font-size: 16px;
+    text-align: center;
+    padding-left: 78px; 
+}
+
+
+@media (max-width: 1146px) {
+  main {
+    padding: 5%;
+  }
+
+  .flex-container20 {
+   justify-content: center;
+  }
+}
+
+@media (max-width: 892px) {
+  .container40 {
+    justify-content: center;
+  }
+
+  .container40 > div {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width:1022px){
+  .section-1 {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
+
+@media (max-width:706px){
+  .left {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width:600px){
+  .facilities {
+    width: 70%;
+  }
+
+  .facilitiesText {
+    width: 70%;
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+
+@media (max-width:350px){
+  .flex-item3 {
+    margin: 0 auto;
+    max-width: 90%;
+
+  }
+  .container40 h3 {
+    float: none;
+    text-align: center;
+    color: #FF8A00;
+  }
+}
+
+
+ @media (max-width:350px){
+  .facilities {
+    margin-top: -80px;
+  }
+
+  .facilitiesText {
+    margin-top: -40px;
+    margin-bottom: 20px;
+  }
+
+  
+} 
