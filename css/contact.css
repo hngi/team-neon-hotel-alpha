@@ -307,7 +307,7 @@ h1{
     color: white;
     background-color: black;
     }
- 
+.info p {padding-top:5px;}
  ion-icon{
     color: #FF8A00;
     font-size: 30px;
